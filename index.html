@@ -10,7 +10,7 @@
         let htmlString = '<ul>';
         for (let file of data) {
           if(file.name.includes(".html") & file.name != "index.html") {
-            htmlString += `<li><a href="${file.path}">${file.name}</a> - `;
+            htmlString += `<li><a href="${file.path}">${file.name}</a>`;
           }
         }
         htmlString += '</ul>';
