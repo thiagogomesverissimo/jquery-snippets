@@ -10,7 +10,8 @@
         let htmlString = '<ul>';
         for (let file of data) {
           if(file.name.includes(".html") & file.name != "index.html") {
-            htmlString += `<li><a href="${file.path}">${file.name}</a>`;
+            htmlString += `<li><a href="${file.path}">${file.name}</a> - `;
+            htmlString += `<a href="https://github.com/thiagogomesverissimo/jquery-snippets/blob/main/${file.name}">(code) ${file.name}</a></li>`;
           }
         }
         htmlString += '</ul>';
