@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+  <a href="#" id="add">Adicionar Item</a>
+  <ul id="lista"></ul>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>   
+  <script>
+    var i = 1;
+    $(document).ready(function(){
+      $('#add').on('click',function(){
+        $('#lista').append('<li>elemento ' + i +'</li>');
+        i++;
+      });
+    });
+  </script>
+</body>
+</html>

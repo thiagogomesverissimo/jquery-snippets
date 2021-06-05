@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<body>
+  <a href="#" onclick="add();return false;">Adicionar Item</a>
+  <ul id="lista"></ul>
+  <script>
+    i = 1;
+    function add(){
+      var x = document.createElement('li');
+      x.innerHTML = "elemento " + i;
+      document.getElementById('lista').appendChild(x);
+      i++;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<body>
+    
+  <table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+    </tr>
+    <tr>
+        <td>Thiago</td>
+        <td>Silva</td>
+    </tr>
+  </table> 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>   
+  <script>
+      $(function(){
+        var rows = $("tr");
+        rows.filter(":even").css("background","red");
+        rows.filter(":odd").css("background","blue");
+
+        rows.filter(function(){
+            return $(this).find("td").eq(0).text() == 'Thiago';
+        }).css("background","green");
+      });
+  </script>
+</body>
+</html>

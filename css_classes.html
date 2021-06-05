@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<body>
+    
+  <div>Item</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>   
+  <script>
+      $(function(){
+        var item = $("div");
+        item.eq(0).addClass('item');
+
+        var item = $("div");
+        if(item.eq(0).hasClass('item')){
+            console.log('div tem a class item');
+        }
+
+        item.eq(0).removeClass('item');
+        item.hide();
+      });
+  </script>
+</body>
+</html>

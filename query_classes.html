@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+    
+  <div class="item">Item 0</div>
+  <div class="item">Item 1</div>
+  <div id="cacula" class="item">Item 2</div>
+  <div class="item">Item 3</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>   
+  <script>
+      $(function(){
+        var itens = $(".item");
+        console.log(itens.eq(0).text());
+        console.log(itens.first().text());
+        console.log(itens.last().text());
+        console.log(itens.last().text());
+
+      });
+  </script>
+</body>
+</html>
